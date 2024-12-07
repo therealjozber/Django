@@ -1,0 +1,22 @@
+POST http://127.0.0.1:8000/auth/registration
+Content-Type: application/json
+
+{
+  "email": "example@example.com",
+  "password": "securepassword123",
+  "first_name": "John",
+  "last_name": "Doe"
+}
+
+
+POST http://127.0.0.1:8000/crud/sign-in
+Content-Type: application/json
+
+{
+  "email": "example@example.com",
+  "password": "securepassword123"
+}
+
+
+GET http://127.0.0.1:8000/crud/test
+Content-Type: application/json
